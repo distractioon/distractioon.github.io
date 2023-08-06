@@ -1,0 +1,594 @@
+
+*{
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+p{
+  font-family: 'Lato', sans-serif;
+  color: #454546; 
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
+  color: #454546; 
+}
+
+/**Header**/
+.header{
+  position: relative;
+}
+.titulo-principal{
+  border-bottom: solid 1px #454546;
+}
+.navbar {
+  color: #454546;
+}
+.nav-link{
+font-size: 20px;
+}
+.nav-item a:hover{
+  border-bottom: 1px solid #454546;
+  }
+
+/**Hero**/
+.hero {
+    position: absolute;
+    position: relative;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+.carousel-inner {
+    height: 570px; 
+    transition:all 0.2s ease-in-out;
+  }
+
+  .carousel-inner .carousel-item img {
+    object-fit: cover; 
+    width: 100%;
+    height: 570px;
+  }
+  .carousel-item{
+    height: 300px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .carousel-caption{
+    z-index: 2;
+  }
+  .carousel-caption p{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .carousel-caption h3{
+    color: white;
+  }
+  
+  /**Circle**/
+
+  .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar los círculos verticalmente */
+  flex-wrap: wrap;
+  }
+  .seccion-circulos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: rgba(69, 69, 70, 0.3) 1px solid;
+  }
+ 
+  .circle-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+  }
+  .circle-ideas{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: auto;
+  }
+  .div-circle{
+    margin: 30px 0;
+  }
+  .circulos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff; 
+     width: 100%;
+     height: 100%; 
+     display: flex;
+     align-items: center;
+    justify-content: center;
+     flex-direction: column; 
+    border-radius: 50%
+}
+.overlay p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #fff;
+}
+.overlay .iconos-contenedor{
+  font-size: 25px;
+}
+.circle-ideas:hover img{
+    opacity: 0.2;
+}
+.circle-ideas:hover .overlay{
+    opacity: 1;
+}
+  /**Card**/
+  .clickable-div {
+    cursor: pointer;
+  }
+   .card-investigacion{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 60%; 
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid rgba(69, 69, 70, 0.7);
+  }
+  .card-investigacion img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0; /* Agregamos un borde redondeado solo en la parte superior */
+  }
+  .card-investigacion .card-body {
+    padding: 10px;
+    background-color: white;
+    border-radius: 0 0 10px 10px; /* Borde redondeado solo en la parte inferior */
+  }
+
+  .card-body .card-title{
+    font-size: 1.2rem;
+  }
+ .card-body .card-text{
+  font-size: 1rem;
+ }
+
+ /**Figuras **/
+ .contenedor-general{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container__block-general{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 600px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  position: relative; 
+  perspective: 1000px;
+  z-index: 3;
+}
+.container__block-general img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;;
+
+}
+
+.container__block-general .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(83, 81, 81, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 5;
+}
+
+.container__block-general .card-back p {
+  transform: rotateY(-180deg);
+  top: 10%; 
+  left: 10%; 
+  width: 80%; 
+  height: 80%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container__block-general .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+
+
+.container__block-general:hover .card-back,
+    .container__block-general:hover img{
+  opacity: 1;
+  transform: rotateY(180deg);  
+}
+.seccion-rotativa{
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding-bottom: 70px;
+  border-bottom: rgba(69, 69, 70, 0.3) 1px solid;
+}
+
+/**Servicios **/
+
+.seccion-servicio .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seccion-servicio .card-body i{
+  font-size: 40px;
+}
+.btn-conocer-mas {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 20px 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+}
+.seccion-servicio:hover .card,
+.btn-conocer-mas:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/**Herder Servicios **/
+
+.servicios-header{
+  background-color: rgba(21, 21, 21, 0.9);
+  padding-top: 30px;
+}
+.servicios-header .titulo-menu-container-servicios h1{
+  color: white;
+}
+.servicios-header nav li a{
+  color: white !important;
+}
+.servicios-header nav li a{
+  color: white !important;
+}
+
+
+.main-section-sevicios{
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.main-section-sevicios p{
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+.img-servicios{
+  width: 400px;
+  height: 400px;
+}
+.img-servicios img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.main-section-sevicios .row {
+  display: flex;
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+  align-items: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos para el efecto de movimiento del <p> */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para el efecto de movimiento de la imagen */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Aplica la animación a los elementos <p> e imagen */
+.main-section-sevicios p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+.main-section-sevicios img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit:contain;
+  animation: slideInFromRight 1s ease forwards;
+}
+
+/**Seccion diseño**/
+
+.section-diseño{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.titulo-diseño{
+  margin-bottom: 50px;
+}
+.secion-diseño-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secion-diseño-contenido h3 {
+  font-size: 40px;
+  background-color: grey;
+  border-radius: 50%; 
+  width: 80px; 
+  height: 80px; 
+  text-align: center; 
+  line-height: 80px; 
+  color: white; 
+ margin: 0 auto;
+ margin-bottom: 20px;
+}
+.secion-diseño-contenido{
+  font-size: 25px;
+ 
+}
+.podemos{
+  font-size: 40px;
+  margin: 40px 0;
+}
+.iconos-card i{
+  font-size: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/**Icono whatsapp**/
+ /* Estilos para el botón de WhatsApp */
+ .whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.whatsapp-button i {
+  font-size: 30px;
+  color: white;
+}
+
+
+/**Footer**/
+
+.main-footer {
+  background: #151515;
+  height: 60px;
+
+}
+
+
+
+
+@media screen and (max-width: 290px){
+
+  .servicios-header .titulo-menu-container-servicios h1{
+    font-size: 32px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0 !important;
+  }
+  .servicios-header{
+    padding: 0;
+  }
+  .main-section-sevicios{
+    height: 85vh;
+  }
+  .servicios-header nav li a{
+    font-size: 12px;
+  }
+  .main-section-sevicios p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 0 0;
+  }
+
+  
+
+  
+}
+  @media screen and (max-width: 570px) {
+    .overlay p{
+      font-size: 18px;
+  }
+  
+    .titulo-menu-container h1{
+      font-size: 2rem;
+      margin: 0;
+    }
+    .carousel-caption h3{
+      font-size: 17px;
+      color: white;
+      margin-top: 20px;
+    }
+    .carousel-caption p{
+      font-size: 14px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .circle-ideas{
+      width: 140px;
+      height: 140px;
+    }
+    .card-investigacion{
+      width: 90%;
+      text-align: justify;
+    }
+
+    .card-investigacion img{
+      height: 35%;
+    }
+    .card-body .card-title{
+      font-size: 1rem;
+    }
+   .card-body .card-text, .btn-secondary{
+    font-size: 0.8rem;
+   }
+   .contenedor-general{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   .card-body h3, .card{
+   font-size: 25px;
+  }
+  .seccion-servicio .card-body i {
+    font-size: 25px;
+  }
+  .navbar-servicios{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .main-section-sevicios img {
+    width: 280px;
+    height: 280px;
+    margin-top: 50px;
+  }
+
+  }
+    
+  @media (min-width: 571px) and (max-width: 800px){
+    .servicios-header nav li a{
+      font-size: 15px;
+    }
+    .main-section-sevicios img {
+      width: 400px;
+      height: 400px;
+      margin-top: 50px;
+    }
+    .img-servicios img{
+      width: 100%;
+      height: 100%;;
+    }
+    .main-section-sevicios .row {
+      display: flex;
+      justify-content: center; /* Coloca los elementos en los extremos */
+      align-items: center;
+    
+    }
+
+ 
+    
+  }
+
+  @media (min-width: 801px) and (max-width:1100px){
+    .main-section-sevicios img {
+      margin-top: 50px;
+    }
+
+    .servicios-header .titulo-menu-container-servicios h1{
+      font-size: 40px;
+      padding-top: 10px;
+      margin: 0 !important;
+    }
+  }
+
+ 
+
+
