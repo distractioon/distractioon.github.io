@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="moda" />
+    <meta name="description" content="moda cursos diseño" />
+    <meta name="keywords" content="Diseño, moda, tendencia, modelaje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Distraction</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../favicon.svg" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Titulo principal-->
+    <header class="principal">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div
+            class="container container-sm container-md container-lg d-flex justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 class="titulo-principal text-white text-center">
+                DISTRACTION
+              </h1>
+            </div>
+            <!-- Contenido visible en pantallas medianas y grandes  -->
+            <div class="d-none d-md-flex">
+              <ul class="contenedor-listas navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activo" href="blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Menú offcanvas -->
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        style="width: 50%"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            DISTRACTION
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="contenedor-listas-boton navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="container custom-margin-top">
+      <div class="row">
+        <div class="col-md-8">
+          <!--Blog tendencia 1-->
+          <div class="card mb-4 tendencias">
+            <img
+              src="../../assets/img/seccion-blog-1.webp"
+              class="card-img-top"
+              alt="Imagen de Inteligencia Artificial"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                El Impacto de la Inteligencia Artificial en Nuestra Vida
+                Cotidiana
+              </h2>
+              <p class="card-text">Fecha de publicación: 7 de Agosto de 2023</p>
+              <p class="card-text">
+                La Inteligencia Artificial (IA) ha revolucionado la forma en que
+                interactuamos con la tecnología...
+              </p>
+              <a
+                href="../blog/blog-inteligencia.html"
+                class="btn btn-secondary"
+                data-target="#blog1"
+                >Leer más</a
+              >
+            </div>
+          </div>
+
+          <!--Blog tecnoglogía 1-->
+          <div class="card mb-4 tecnologia">
+            <img
+              src="../../assets/img/seccion-blog-desarrollo.webp"
+              class="card-img-top"
+              alt="Imagen de Desarrollo Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                Evolución y Transformación: La Historia del Desarrollo Web
+              </h2>
+              <p class="card-text">
+                Fecha de publicación: 10 de Agosto de 2023
+              </p>
+              <p class="card-text">
+                Desde los primeros días de la World Wide Web hasta las
+                tecnologías actuales...
+              </p>
+              <a
+                href="../blog/blog-desarrollo.html"
+                class="btn btn-secondary"
+                data-target="#blog2"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <!--Blog desarrollo web 1-->
+          <div class="card mb-4 desarrollo-web">
+            <img
+              src="../../assets/img/seccion-blog-crecimiento.webp"
+              class="card-img-top"
+              alt="Imagen de Tienda Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                Expandiendo Horizontes: La Importancia de Llevar las Tiendas
+                Físicas al Mundo en Línea
+              </h2>
+              <p class="card-text">
+                Fecha de publicación: 15 de Agosto de 2023
+              </p>
+              <p class="card-text">
+                En una era digital, llevar tu tienda física al mundo en línea es
+                esencial para alcanzar...
+              </p>
+              <a
+                href="../blog/blog-expandiendo.html"
+                class="btn btn-secondary"
+                data-target="#blog3"
+                >Leer más</a
+              >
+            </div>
+          </div>
+
+          <!--Blog tendencia 2-->
+          <div class="card mb-4 tendencias">
+            <img
+              src="../../assets/img/blog-inteligencia-trabajo.webp"
+              class="card-img-top"
+              alt="Imagen de Inteligencia Artificial"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Repercusión de la IA en el Trabajo.</h2>
+              <p class="card-text">Fecha de publicación: 6 de Junio de 2023</p>
+              <p class="card-text">
+                La creciente influencia de la inteligencia artificial está
+                transformando la naturaleza del trabajo...
+              </p>
+              <a
+                href="../blog/blog-inteligencia.html#blog-inteligencia-1"
+                class="btn btn-secondary"
+                data-target="#blog1"
+                >Leer más</a
+              >
+            </div>
+          </div>
+
+          <!--Blog tecnoglogía 2-->
+          <div class="card mb-4 tecnologia">
+            <img
+              src="../../assets/img/blog-desarrollo-impacto.webp"
+              class="card-img-top"
+              alt="Imagen de Desarrollo Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                El Desarrollo Web y su Impacto en la Transformación Digital
+              </h2>
+              <p class="card-text">Fecha de publicación: 3 de Enero de 2023</p>
+              <p class="card-text">
+                El desarrollo web ha sido un pilar fundamental en la
+                transformación digital de la sociedad y las empresas. En un
+                mundo...
+              </p>
+              <a
+                href="../blog/blog-desarrollo.html#blog-desarrollo-1"
+                class="btn btn-secondary"
+                data-target="#blog2"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <div class="card mb-4 desarrollo-web">
+            <img
+              src="../../assets/img/seccion-blog-crecimiento-potenciando.webp"
+              class="card-img-top"
+              alt="Imagen de Tienda Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                Potenciando Tu Tienda en Línea: Mejora y Crecimiento en el Mundo
+                Digital
+              </h2>
+              <p class="card-text">
+                Fecha de publicación: 7 de Febrero de 2023
+              </p>
+              <p class="card-text">
+                En el actual panorama empresarial, Potenciar Tu Tienda en Línea
+                se ha convertido en una estrategia fundamental para alcanzar...
+              </p>
+              <a
+                href="../blog/blog-expandiendo.html#blog-expandimiento-2"
+                class="btn btn-secondary"
+                data-target="#blog3"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <div class="card mb-4 tendencias">
+            <img
+              src="../../assets/img/blog-inteligencia.generaciones.webp"
+              class="card-img-top"
+              alt="Imagen de Inteligencia Artificial"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                La Influencia de la Inteligencia Artificial en las Nuevas
+                Generaciones
+              </h2>
+              <p class="card-text">Fecha de publicación: 26 de Marzo de 2023</p>
+              <p class="card-text">
+                La creciente influencia de la inteligencia artificial está
+                cambiando la manera en que las nuevas generaciones
+                interactúan...
+              </p>
+              <a
+                href="../blog/blog-inteligencia.html#blog-inteligencia-2"
+                class="btn btn-secondary"
+                data-target="#blog1"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <div class="card mb-4 tecnologia">
+            <img
+              src="../../assets/img/blog-desarrollo-optimizacion.webp"
+              class="card-img-top"
+              alt="Imagen de Desarrollo Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                Optimización de la Experiencia del Usuario en el Desarrollo Web
+              </h2>
+              <p class="card-text">
+                Fecha de publicación: 21 de Diciembre de 2022
+              </p>
+              <p class="card-text">
+                En el mundo del desarrollo web, la experiencia del usuario (UX)
+                se ha convertido en un factor crucial para el éxito de
+                cualquier...
+              </p>
+              <a
+                href="../blog/blog-desarrollo.html#blog-desarrollo-2"
+                class="btn btn-secondary"
+                data-target="#blog2"
+                >Leer más</a
+              >
+            </div>
+          </div>
+          <div class="card mb-4 desarrollo-web">
+            <img
+              src="../../assets/img/seccion-blog-crecimiento-casa.webp"
+              class="card-img-top"
+              alt="Imagen de Tienda Web"
+            />
+            <div class="card-body">
+              <h2 class="card-title">
+                La Nueva Era del Shopping: Descubriendo la Comodidad de las
+                Tiendas desde Casa
+              </h2>
+              <p class="card-text">
+                Fecha de publicación: 11 de Noviembre de 2022
+              </p>
+              <p class="card-text">
+                En la era digital en la que vivimos, las tiendas en línea han
+                revolucionado la forma en que hacemos compras. Una de las
+                mayores ventajas que ofrecen...
+              </p>
+              <a
+                href="../blog/blog-expandiendo.html#blog-expandimiento-3"
+                class="btn btn-secondary"
+                data-target="#blog3"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ver-todo">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action categoria"
+              data-target="tecnologia"
+            >
+              Tecnología
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action categoria"
+              data-target="desarrollo-web"
+            >
+              Desarrollo Web
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action categoria"
+              data-target="tendencias"
+            >
+              Tendencias
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action categoria"
+              data-target="ver-todo"
+            >
+              Ver Todo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Acerca de Nosotros</h3>
+            <p>
+              Somos una agencia creativa dedicada a ofrecer soluciones digitales
+              innovadoras para tu negocio.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> A Coruña, Galicia</p>
+            <p><i class="fas fa-phone"></i> +34 633 381 865</p>
+            <p><i class="fas fa-envelope"></i> mariagustina.rod@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Enlaces Útiles</h3>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="login.html">Contacto</a></li>
+              <li><a href="../servicios/privacidad.html">Política de Privacidad</a></li>
+              <li><a href="../servicios/terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Síguenos</h3>
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 Todos los derechos reservados Agustina Rodiño</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/listas.js"></script>
+    <script src="../../assets/js/card.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

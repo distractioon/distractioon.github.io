@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="moda" />
+    <meta name="description" content="moda cursos diseño" />
+    <meta name="keywords" content="Diseño, moda, tendencia, modelaje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Agregar enlace al CSS de Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <title>Distraction</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../favicon.svg" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Titulo principal-->
+
+    <header class="header-principal">
+      <nav class="container-fluid navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div
+            class="container container-sm container-md container-lg d-flex justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 class="titulo-principal text-white text-center">
+                DISTRACTION
+              </h1>
+            </div>
+            <!-- Contenido visible en pantallas medianas y grandes  -->
+            <div class="d-none d-md-flex">
+              <ul class="contenedor-listas navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="views/otros/nosotros.html"
+                    >NOSOTROS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="views/otros/blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activo" href="views/otros/login.html"
+                    >CONTACTO</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Menú offcanvas -->
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        style="width: 50%"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            DISTRACTION
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="contenedor-listas-boton navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link activo" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/otros/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/otros/blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="views/otros/login.html"
+                >CONTACTO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 text-center container login__contenedor">
+          <h2 class="login__titulo">Contácta con Nosotros</h2>
+          <p class="login__text">
+            Nos apasiona la moda y nos esforzamos por brindarte una experiencia
+            de compra única y satisfactoria. Nos dedicamos a ofrecerte las
+            últimas tendencias y estilos de moda, cuidadosamente seleccionados
+            para que te sientas elegante, cómodo/a y seguro/a en cada ocasión.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section class="container">
+      <div class="row seccion-contacto">
+        <div class="col-12 col-lg-4">
+          <div class="iconos-contacto">
+            <i class="bi bi-envelope-at"></i>
+          </div>
+          <button class="link-contacto">Envíanos Un Mensaje Enectrónico</button>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="iconos-contacto">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <button class="link-contacto">Contáctanos vía WhatsApp</button>
+          <p class="texto-contacto">de 09.00h a 18:00h (de lunes a viernes)</p>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="iconos-contacto">
+            <i class="bi bi-phone-vibrate"></i>
+          </div>
+          <button class="link-contacto">Llámanos</button>
+          <p class="texto-contacto">de 09.00h a 18:00h (de lunes a viernes)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="container mapa">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 info-contacto">
+          <h4>Información de Contacto</h4>
+          <p><strong>Dirección:</strong> Calle Principal, Ciudad</p>
+          <p><strong>Teléfono:</strong> +123 456 7890</p>
+          <p><strong>Correo electrónico:</strong> info@example.com</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Acerca de Nosotros</h3>
+            <p>
+              Somos una agencia creativa dedicada a ofrecer soluciones digitales
+              innovadoras para tu negocio.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> A Coruña, Galicia</p>
+            <p><i class="fas fa-phone"></i> +34 633 381 865</p>
+            <p><i class="fas fa-envelope"></i> mariagustina.rod@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Enlaces Útiles</h3>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="login.html">Contacto</a></li>
+              <li><a href="../servicios/privacidad.html">Política de Privacidad</a></li>
+              <li><a href="../servicios/terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Síguenos</h3>
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 Todos los derechos reservados Agustina Rodiño</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/mapa.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

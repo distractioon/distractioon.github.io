@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="moda" />
+    <meta name="description" content="moda cursos diseño" />
+    <meta name="keywords" content="Diseño, moda, tendencia, modelaje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Distraction</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../favicon.svg" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+<!--Titulo principal-->
+<header class="header-principal">
+    <nav class="container-fluid navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <div
+          class="container container-sm container-md container-lg d-flex justify-content-between"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="navbar-toggler d-md-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 class="titulo-principal text-white text-center">
+              DISTRACTION
+            </h1>
+          </div>
+          <!-- Contenido visible en pantallas medianas y grandes  -->
+          <div class="d-none d-md-flex">
+            <ul class="contenedor-listas navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="views/otros/nosotros.html"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="views/otros/blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="views/otros/login.html"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-linkedin"></i>
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú offcanvas -->
+    <div
+      class="offcanvas offcanvas-start text-bg-dark"
+      tabindex="-1"
+      id="offcanvasDarkNavbar"
+      aria-labelledby="offcanvasDarkNavbarLabel"
+      style="width: 50%"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          DISTRACTION
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="contenedor-listas-boton navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link activo" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/otros/nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="views/otros/blog.html">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activo" href="views/otros/login.html"
+              >CONTACTO</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+ 
+  <main class="container seccion-privacidad">
+
+    <h2 class="text-center">Términos y Condiciones</h2>
+    <section>
+      <h3>1. Aceptación de Términos</h3>
+      <p>Al acceder y utilizar este sitio web, usted acepta los siguientes términos y condiciones. Estos términos constituyen un acuerdo legal entre usted y Distraction.</p>
+    </section>
+
+    <section>
+      <h3>2. Propiedad Intelectual</h3>
+      <p>Todos los contenidos presentes o disponibles a través de este sitio web, incluyendo, entre otros, textos, gráficos, logotipos, íconos, imágenes, audios, descargas digitales y software, son propiedad de Distraction o de terceros que han otorgado los derechos necesarios. El uso no autorizado de estos contenidos puede violar las leyes de derechos de autor y otras leyes aplicables.</p>
+    </section>
+
+    <section>
+      <h3>3. Uso del Sitio Web</h3>
+      <p>Usted se compromete a utilizar este sitio web de manera adecuada y de acuerdo con estos términos y condiciones. Queda prohibido el uso del sitio web para fines ilegales o no autorizados, así como cualquier acción que pueda causar daño a la infraestructura del sitio o interferir con su funcionamiento.</p>
+    </section>
+
+    <section>
+      <h3>4. Enlaces a Sitios Externos</h3>
+      <p>Nuestro sitio web puede contener enlaces a sitios web externos. No somos responsables por el contenido o las prácticas de privacidad de dichos sitios. Le recomendamos revisar las políticas de privacidad de esos sitios antes de proporcionar cualquier información personal.</p>
+    </section>
+  
+    <section>
+      <h3>5. Cambios en los Términos y Condiciones</h3>
+      <p>Distraction se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios serán efectivos cuando se publiquen en este sitio web. Le recomendamos revisar periódicamente esta página para estar informado sobre cualquier cambio.</p>
+    </section>
+  
+    <section>
+      <h3>6. Limitación de Responsabilidad</h3>
+      <p>No seremos responsables por cualquier daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de usar este sitio web. Esto incluye, entre otros, pérdida de datos, pérdida de ingresos o interrupción del negocio.</p>
+    </section>
+
+    <section>
+      <h3>9. Nota Importante</h3>
+      <p>Los términos y condiciones aquí presentados son solo un ejemplo y no representan un acuerdo legal real. Este contenido se proporciona con fines ilustrativos y educativos. Si desea conocer los términos y condiciones reales, le recomendamos visitar el sitio web oficial de una web o ponerse en contacto directamente con la empresa.</p>
+    </section>
+
+    <section>
+      <h3>10. Contacto</h3>
+      <p>Si tiene alguna pregunta sobre estos términos y condiciones, puede contactarnos a través de nuestra página de <a href="../otros/login.html">Contacto</a>.</p>
+    </section>
+  </main>
+
+
+
+
+  <footer class="container-fluid bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Acerca de Nosotros</h3>
+          <p>
+            Somos una agencia creativa dedicada a ofrecer soluciones digitales
+            innovadoras para tu negocio.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-map-marker-alt"></i> A Coruña, Galicia</p>
+          <p><i class="fas fa-phone"></i> +34 633 381 865</p>
+          <p><i class="fas fa-envelope"></i> mariagustina.rod@gmail.com</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Enlaces Útiles</h3>
+          <ul class="list-unstyled">
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="login.html">Contacto</a></li>
+            <li><a href="privacidad.html">Política de Privacidad</a></li>
+            <li><a href="terminos.html">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Síguenos</h3>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4" />
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 Todos los derechos reservados Agustina Rodiño</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

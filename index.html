@@ -39,60 +39,103 @@
     />
   </head>
   <body>
-    <!--Titulo principal-->
-    <header class="principal">
-      <div
-        class="titulo-menu-container container container-sm container-md container-lg d-block"
-      >
-        <div class="titulo-principal">
-          <h1 class="text-center mt-3">DISTRACTION</h1>
-        </div>
-
-        <!--Menú de navegación-->
-        <nav class="navegador-flex navbar navbar-expand-sm navbar-light">
-          <div class="container-fluid d-flex justify-content-center">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar-toggler"
-              aria-controls="navbar-toggler"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-              <ul
-                class="navbar-nav w-100 justify-content-around align-items-center"
+    <header class="header-principal">
+      <nav class="container-fluid navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div
+            class="container container-sm container-md container-lg d-flex justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
               >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 class="titulo-principal text-white text-center">
+                DISTRACTION
+              </h1>
+            </div>
+            <!-- Contenido visible en pantallas medianas y grandes  -->
+            <div class="d-none d-md-flex">
+              <ul class="contenedor-listas navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#sobre-mi"
-                    >INICIO</a
+                  <a class="nav-link activo" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="views/otros/nosotros.html"
+                    >NOSOTROS</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#proyectos">NOTICIAS</a>
+                  <a class="nav-link" href="views/otros/blog.html">BLOG</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonios">REGISTRO</a>
+                  <a class="nav-link" href="views/otros/login.html">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacto">INICIAR SESION</a>
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+
+      <!-- Menú offcanvas -->
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        style="width: 50%"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            DISTRACTION
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="contenedor-listas-boton navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link activo" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/otros/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/otros/blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/otros/login.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <!--Hero-->
-    <section class="section-hero">
+
+    <section class="section-hero active" id="seccion-hero">
       <div
         id="carouselExampleCaptions"
         class="slider carousel carousel-fade"
@@ -120,19 +163,22 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="hero">
               <img
-                src="assets/img/tienda5.jpg"
+                src="assets/img/carrousel1.webp"
                 class="d-block w-100 h-300"
-                alt="..."
+                alt="Tienda de ropa con vendedora"
               />
             </div>
-
-            <!--contenido carousel-->
-
             <div class="carousel-caption d-md-block">
               <h3>Potencia tu Tienda en Línea</h3>
               <p>
@@ -146,9 +192,9 @@
           <div class="carousel-item">
             <div class="hero">
               <img
-                src="assets/img/tienda4.jpg"
+                src="assets/img/carrousel2.webp"
                 class="d-block w-100 h-300"
-                alt="..."
+                alt="Vestidores de la tienda"
               />
             </div>
             <div class="carousel-caption d-md-block">
@@ -166,9 +212,9 @@
           <div class="carousel-item">
             <div class="hero">
               <img
-                src="assets/img/tienda3.jpg"
+                src="assets/img/carrousel3.webp"
                 class="d-block w-100 h-300"
-                alt="..."
+                alt="Tienda de ropa con vendedora"
               />
             </div>
             <div class="carousel-caption d-md-block">
@@ -188,7 +234,28 @@
               </p>
             </div>
           </div>
+          <div class="carousel-item">
+            <div class="hero">
+              <img
+                src="assets/img/carrusel4.webp"
+                class="d-block w-100 h-300"
+                alt="Tablet y un cuaderno"
+              />
+            </div>
+            <div class="carousel-caption d-md-block">
+              <h3>Transición de Tienda Física a Tienda en Línea</h3>
+              <p>
+                Descubre cómo llevar tu negocio al mundo digital. Aprovecha la
+                oportunidad de expandir tu alcance y brindar a tus clientes una
+                experiencia de compra en línea conveniente y accesible. Nuestro
+                equipo te guiará en cada paso del proceso para asegurarte una
+                transición exitosa.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <!-- Botones de control -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -211,13 +278,17 @@
     </section>
 
     <!--Ideas Circulos-->
-    <section class="circle container-fluid container-sm container-md seccion-circulos">
+    <section
+      class="circle container-fluid container-sm container-md seccion-circulos active"
+      id="seccion-circulos"
+    >
+      <h2 class="section-title">Nuestros Procesos</h2>
       <div class="row justify-content-center div-circle d-fle">
         <div class="circulos col-6 col-sm-4 col-md-4 col-lg-2">
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/circulo-1.jpg"
+              src="assets/img/circulo-1.webp"
               alt="Mostrando como planificar"
             />
             <div class="overlay clickable-div" data-target="cardContainer">
@@ -233,7 +304,7 @@
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/circulo1.jpg"
+              src="assets/img/circulo-2.webp"
               alt="Imagen relacionada a realizar estrategias"
             />
             <div class="overlay clickable-div" data-target="cardContainer2">
@@ -249,7 +320,7 @@
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/circulo3.jpg"
+              src="assets/img/circulo-3.webp"
               alt="Imagen relacionada con la implementacion"
             />
             <div class="overlay clickable-div" data-target="cardContainer3">
@@ -265,7 +336,7 @@
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/circulo4.jpg"
+              src="assets/img/circulo4.webp"
               alt="Imagen relacionada a la edicion"
             />
             <div class="overlay clickable-div" data-target="cardContainer4">
@@ -281,7 +352,7 @@
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/circulo5.jpg"
+              src="assets/img/circulo-5.webp"
               alt="Imagen relacionada a la proyeccion"
             />
             <div class="overlay clickable-div" data-target="cardContainer5">
@@ -297,7 +368,7 @@
           <div class="circle-ideas justify-content-center">
             <img
               class="circle-img"
-              src="assets/img/accesorios1.jpg"
+              src="assets/img/circulo-6.webp"
               alt="Imagen relacionada con el lanzamiento"
             />
             <div class="overlay clickable-div" data-target="cardContainer6">
@@ -313,9 +384,33 @@
 
     <!-- Modal para la card -->
     <section class="cards">
+      <div class="container card-container d-none" id="cardContainer">
+        <div class="card card-investigacion">
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo-1.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h3 class="card-title">Planificación</h3>
+            <p class="card-text">
+              Transformar una tienda de ropa tradicional en una experiencia
+              digital exitosa requiere una estrategia de desarrollo web bien
+              planificada. La clave está en un diseño web moderno y responsive
+              que ofrezca una navegación intuitiva. Un catálogo completo y
+              descripciones detalladas, junto con métodos de pago seguros,
+              garantizan una experiencia de compra confiable. Con análisis web
+              continuo, las tiendas online lograrán maximizar sus conversiones y
+              florecer en el mundo digital.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="container card-container d-none" id="cardContainer2">
         <div class="card card-investigacion">
-          <img src="assets/img/circulo1.jpg" class="card-img-top" alt="..." />
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo-2.webp" class="card-img-top" alt="..." />
           <div class="card-body">
             <h3 class="card-title">Estrategia</h3>
             <p class="card-text">
@@ -328,15 +423,15 @@
               continuo, las tiendas online lograrán maximizar sus conversiones y
               florecer en el mundo digital.
             </p>
-            <a href="#" class="btn btn-secondary" onclick="closeCard()"
-              >Volver <i class="bi bi-arrow-right-square"></i>
-            </a>
           </div>
         </div>
       </div>
       <div class="container card-container d-none" id="cardContainer3">
         <div class="card card-investigacion">
-          <img src="assets/img/circulo3.jpg" class="card-img-top" alt="..." />
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo-3.webp" class="card-img-top" alt="..." />
           <div class="card-body">
             <h3 class="card-title">Implementación</h3>
             <p class="card-text">
@@ -348,15 +443,15 @@
               análisis para medir el rendimiento. ¡Tu tienda estará lista para
               brillar en el mundo digital y alcanzar el éxito!
             </p>
-            <a href="#" class="btn btn-secondary" onclick="closeCard()"
-              >Volver <i class="bi bi-arrow-right-square"></i>
-            </a>
           </div>
         </div>
       </div>
       <div class="container card-container d-none" id="cardContainer4">
         <div class="card card-investigacion">
-          <img src="assets/img/circulo4.jpg" class="card-img-top" alt="..." />
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo4.webp" class="card-img-top" alt="..." />
           <div class="card-body">
             <h3 class="card-title">Edición</h3>
             <p class="card-text">
@@ -367,15 +462,15 @@
               impulsando la satisfacción del cliente y el crecimiento del
               negocio. Destaca en el mundo digital.
             </p>
-            <a href="#" class="btn btn-secondary" onclick="closeCard()"
-              >Volver <i class="bi bi-arrow-right-square"></i>
-            </a>
           </div>
         </div>
       </div>
       <div class="container card-container d-none" id="cardContainer5">
         <div class="card card-investigacion">
-          <img src="assets/img/circulo5.jpg" class="card-img-top" alt="..." />
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo-5.webp" class="card-img-top" alt="..." />
           <div class="card-body">
             <h3 class="card-title">Proyección</h3>
             <p class="card-text">
@@ -387,15 +482,15 @@
               el mercado digital, atrayendo nuevos clientes y prosperando a lo
               grande.
             </p>
-            <a href="#" class="btn btn-secondary" onclick="closeCard()"
-              >Volver <i class="bi bi-arrow-right-square"></i>
-            </a>
           </div>
         </div>
       </div>
       <div class="container card-container d-none" id="cardContainer6">
         <div class="card card-investigacion">
-          <img src="assets/img/circulo6.jpg" class="card-img-top" alt="..." />
+          <a href="#" class="btn close-card-button">
+            <i class="bi bi-x-square"></i>
+          </a>
+          <img src="assets/img/circulo-6.webp" class="card-img-top" alt="..." />
           <div class="card-body">
             <h3 class="card-title">Lanzamiento</h3>
             <p class="card-text">
@@ -407,58 +502,94 @@
               tu tienda conquistará el mercado digital desde el primer momento.
               ¡Es hora de brillar y triunfar en grande!
             </p>
-            <a href="#" class="btn btn-secondary" onclick="closeCard()"
-              >Volver <i class="bi bi-arrow-right-square"></i>
-            </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Desarrollamos-->
+
+    <section class="develop-section container active" id="seccion-desarrollo">
+      <div class="title-container">
+        <h3 class="fixed-title">EXPERTOS EN DESARROLLO WEB</h3>
+        <div class="changing-titles">
+          <h4 class="changing-title" id="title1">CREANDO PRESENCIAS</h4>
+          <h4 class="changing-title" id="title2">DISEÑO Y FUNCIONALIDAD</h4>
+          <h4 class="changing-title" id="title3">
+            IMPULSANDO TU ÉXITO DIGITAL
+          </h4>
         </div>
       </div>
     </section>
 
     <!--Rotativo-->
 
-    <section class="container contenedor-general seccion-rotativa">
+    <section
+      class="container contenedor-general seccion-rotativa active"
+      id="seccion-rotativo"
+    >
       <div class="row">
-
         <div class="col-12 col-lg-6 container__block-general">
-          <img src="assets/img/pexels-andrea-piacquadio-3799830.jpg" alt="" />
+          <img src="assets/img/cuadro-1.webp" alt="" />
           <div class="card-back">
-            <p>Transforma tus ideas en realidad, plasmar tu visión en la web es nuestro enfoque. Descubre cómo materializamos tus sueños digitales con creatividad y precisión.</p>
+            <p>
+              Transforma tus ideas en realidad, plasmar tu visión en la web es
+              nuestro enfoque. Descubre cómo materializamos tus sueños digitales
+              con creatividad y precisión.
+            </p>
           </div>
         </div>
 
         <div class="col-12 col-lg-6 container__block-general">
-          <img src="assets/img/pexels-hamann-la-947785.jpg" alt="" />
+          <img src="assets/img/cuadro-2.webp" alt="" />
           <div class="card-back">
-            <p>Recibe asesoramiento experto en tu material digital. Diseños cautivadores, estrategias efectivas y resultados excepcionales para llevar tu tienda en línea al siguiente nivel en el mundo digital.</p>
+            <p>
+              Recibe asesoramiento experto en tu material digital. Diseños
+              cautivadores, estrategias efectivas y resultados excepcionales
+              para llevar tu tienda en línea al siguiente nivel en el mundo
+              digital.
+            </p>
           </div>
         </div>
 
         <div class="col-12 col-lg-6 container__block-general">
-          <img src="assets/img/ultima.jpg" alt="" />
+          <img src="assets/img/cuadro-3.webp" alt="" />
           <div class="card-back">
-            <p>Lleva tu tienda contigo a cualquier lugar. Con nuestra solución responsive, podrás administrar tu negocio desde cualquier dispositivo, sin límites geográficos.</p>
+            <p>
+              Lleva tu tienda contigo a cualquier lugar. Con nuestra solución
+              responsive, podrás administrar tu negocio desde cualquier
+              dispositivo, sin límites geográficos.
+            </p>
           </div>
         </div>
 
         <div class="col-12 col-lg-6 container__block-general">
-          <img src="assets/img/1.jpg" alt="" />
+          <img src="assets/img/cuadro-4.webp" alt="" />
           <div class="card-back">
-            <p>Somos un equipo apasionado por el éxito. Trabajamos juntos para crear experiencias digitales impactantes. Nuestra colaboración te asegura resultados sorprendentes.</p>
+            <p>
+              Somos un equipo apasionado por el éxito. Trabajamos juntos para
+              crear experiencias digitales impactantes. Nuestra colaboración te
+              asegura resultados sorprendentes.
+            </p>
           </div>
         </div>
-
+      </div>
     </section>
 
     <!--Servicios-->
 
-    <section class="container seccion-servicios">
+    <section
+      class="container seccion-servicios active"
+      id="servicio seccion-sevicio"
+    >
       <h2 class="text-center mb-4">Servicios Principales</h2>
       <div class="row justify-content-center">
-    
         <div class="col-12 col-md-4 mb-4 seccion-servicio">
           <div class="card text-center">
-            <a href="views/servicios/servicios-diseño.html" class="card text-center">
+            <a
+              href="views/servicios/servicios-diseño.html"
+              class="card text-center"
+            >
               <div class="card-body">
                 <i class="bi bi-laptop"></i>
                 <h3 class="card-title">Diseño de sitios web corporativos</h3>
@@ -466,77 +597,127 @@
             </a>
           </div>
         </div>
-    
+
         <div class="col-12 col-md-4 mb-4 seccion-servicio">
           <div class="card text-center">
-            <a href="url-del-servicio-1" class="card text-center">
+            <a
+              href="views/servicios/servicios-pagos.html"
+              class="card text-center"
+            >
               <div class="card-body">
-               <i class="bi bi-cart4"></i>
-               <h3 class="card-title">eCommerce con pagos online</h3>
+                <i class="bi bi-cart4"></i>
+                <h3 class="card-title">eCommerce con pagos online</h3>
               </div>
-           </a>
+            </a>
           </div>
         </div>
-    
-        <div class="col-12 col-md-4 mb-4 seccion-servicio">
+
+        <div class="col-12 col-md-4 mb-4 seccion-servicio nones">
           <div class="card text-center">
-            <a href="url-del-servicio-1" class="card text-center">
+            <a href="#servicio" class="card text-center">
               <div class="card-body">
                 <i class="bi bi-code"></i>
-                <h3 class="card-title">Sistemas a medida y web apps</h3>
+                <h3 class="card-title">
+                  Soluciones Personalizadas y Aplicaciones Web a la Medida
+                </h3>
               </div>
             </a>
           </div>
         </div>
-    
-        <div class="col-12 col-md-4 mb-4 seccion-servicio">
+
+        <div class="col-12 col-md-4 mb-4 seccion-servicio nones">
           <div class="card text-center">
-            <a href="url-del-servicio-1" class="card text-center">
-            <div class="card-body">
-              <i class="bi bi-envelope"></i>
-              <h3 class="card-title">eMail marketing automatizado</h3>
-            </div>
-          </a>
-          </div>
-        </div>
-    
-        <div class="col-12 col-md-4 mb-4 seccion-servicio">
-          <div class="card text-center">
-            <a href="url-del-servicio-1" class="card text-center">
-            <div class="card-body">
-              <i class="bi bi-share"></i>
-              <h3 class="card-title">Publicidades en Redes Sociales</h3>
-            </div>
+            <a href="#ervicios" class="card text-center">
+              <div class="card-body">
+                <i class="bi bi-envelope"></i>
+                <h3 class="card-title">
+                  Automatización de eMails, Eficiencia y Comunicación Efectiva
+                </h3>
+              </div>
             </a>
           </div>
         </div>
-    
-        <div class="col-12 col-md-4 mb-4 seccion-servicio">
+
+        <div class="col-12 col-md-4 mb-4 seccion-servicio nones">
           <div class="card text-center">
-            <a href="url-del-servicio-1" class="card text-center">
-            <div class="card-body">
-              <i class="bi bi-pie-chart"></i>
-              <h3 class="card-title">Plan de marketing</h3>
-            </div>
+            <a href="#servicios" class="card text-center">
+              <div class="card-body">
+                <i class="bi bi-share"></i>
+                <h3 class="card-title">
+                  Potenciamos tu Presencia en Redes Sociales
+                </h3>
+              </div>
             </a>
           </div>
         </div>
-    
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <a href="" class="btn btn-secondary btn-conocer-mas">Conocer más servicios</a>
+
+        <div class="col-12 col-md-4 mb-4 seccion-servicio">
+          <div class="card text-center">
+            <a
+              href="views/servicios/servicios-plan.html"
+              class="card text-center"
+            >
+              <div class="card-body">
+                <i class="bi bi-pie-chart"></i>
+                <h3 class="card-title">
+                  Planificación Estratégica de Marketing
+                </h3>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!--Footer-->
+    <footer class="container-fluid bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Acerca de Nosotros</h3>
+            <p>
+              Somos una agencia creativa dedicada a ofrecer soluciones digitales
+              innovadoras para tu negocio.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> A Coruña, Galicia</p>
+            <p><i class="fas fa-phone"></i> +34 633 381 865</p>
+            <p><i class="fas fa-envelope"></i> mariagustina.rod@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Enlaces Útiles</h3>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="views/otros/login.html">Contacto</a></li>
+              <li><a href="views/servicios/privacidad.html">Política de Privacidad</a></li>
+              <li><a href="views/servicios/terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Síguenos</h3>
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 Todos los derechos reservados Agustina Rodiño</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <footer class="container-fluid d-block main-footer">
-      <p class="copy">© 2023 Distraction. All Rights Reserved | Design by Agustina Rodiño</p>
-  </footer>
-
+    <!--script-->
     <script src="assets/js/card.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/animacion.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

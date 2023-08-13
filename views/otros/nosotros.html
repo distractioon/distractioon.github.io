@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="moda" />
+    <meta name="description" content="moda cursos diseño" />
+    <meta name="keywords" content="Diseño, moda, tendencia, modelaje" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Distraction</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../favicon.svg" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Titulo principal-->
+    <header class="header-principal">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div
+            class="container container-sm container-md container-lg d-flex justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler d-md-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 class="titulo-principal text-white text-center">
+                DISTRACTION
+              </h1>
+            </div>
+            <!-- Contenido visible en pantallas medianas y grandes  -->
+            <div class="d-none d-md-flex">
+              <ul class="contenedor-listas navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link activo" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Menú offcanvas -->
+      <div
+        class="offcanvas offcanvas-start text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        style="width: 50%"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            DISTRACTION
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="contenedor-listas-boton navbar-nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="seccion-nosotros container mt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="text-center seccion-nosotros-titulo">
+              <h2>
+                Un Viaje Digital: Transformando Tiendas Físicas en Experiencias
+                Online
+              </h2>
+              <p>
+                En nuestra agencia de desarrollo web y marketing digital, nos
+                dedicamos a guiar a las tiendas físicas en un emocionante viaje
+                de transformación hacia el mundo online. Nuestro compromiso es
+                potenciar tu negocio a través de soluciones creativas y
+                estratégicas.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 lista-nosotros">
+            <div class="border-right pr-4">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      2019 Inicios de Nuestra Travesía
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="heading2014"
+                    data-parent="#accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-body">
+                      Desde nuestros inicios, nos propusimos crear soluciones
+                      digitales que transformen la manera en que las tiendas
+                      físicas interactúan con su audiencia. Trabajamos en cada
+                      detalle para brindarte resultados excepcionales.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      2020 Superando Desafíos: La Pandemia
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      El año 2020 nos presentó un desafío sin precedentes con la
+                      llegada de la pandemia global. Sin embargo, vimos una
+                      oportunidad para ayudar a las tiendas físicas a adaptarse
+                      al entorno digital de manera acelerada. A través de
+                      estrategias creativas y soluciones innovadoras, logramos
+                      un crecimiento exponencial para nuestros clientes,
+                      demostrando que en medio de la adversidad, es posible
+                      transformar las dificultades en oportunidades de éxito.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      2021 Avanzando Hacia Nuevos Desafíos
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Durante el año 2021, nos desafiamos a nosotros mismos a
+                      llevar nuestras soluciones digitales a un nivel superior.
+                      Implementamos estrategias creativas de marketing en línea
+                      que permitieron a nuestros clientes alcanzar nuevas
+                      audiencias y aumentar sus ventas de manera significativa.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      2022 Crecimiento Continuo y Nuevas Metas
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      Durante el año 2022, nuestro compromiso constante con el
+                      crecimiento nos llevó a trabajar codo a codo con nuestros
+                      clientes para superar desafíos y lograr resultados
+                      excepcionales. Nuestro enfoque en la innovación y la
+                      creatividad nos permitió alcanzar nuevas metas juntos.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFive"
+                    >
+                      2023 Afrontando Nuevos Retos y Oportunidades
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFive"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      En este año, nos encontramos listos para enfrentar nuevos
+                      retos y aprovechar emocionantes oportunidades en el mundo
+                      digital. Nuestra pasión por la innovación y la excelencia
+                      nos impulsa a seguir transformando las tiendas físicas en
+                      exitosas experiencias online. Juntos, continuamos
+                      escribiendo nuestra historia de éxito.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="elementor-section seccion-nosotros-conocenos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center mt-5">
+              <h2 class="titulo">Conoce un Poco de Nosotros</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-nosotros-contenedor">
+      <div class="container bg-white shadow rounded">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="p-4 parrafo-principal">
+              <p>
+                En nuestra agencia, ofrecemos una amplia gama de servicios
+                digitales para impulsar tu presencia en línea
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>Desarrollo Web <i class="bi bi-file-earmark-code"></i></h4>
+              <p>
+                Creamos sitios web funcionales y atractivos que se adaptan a las
+                necesidades de tu negocio, brindando una experiencia única para
+                tus visitantes.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-desarrollo.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>Diseño de Sitios Web <i class="bi bi-window-sidebar"></i></h4>
+              <p>
+                Creamos sitios web a medida que reflejan la identidad de tu
+                marca y brindan una experiencia única para tus usuarios.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-diseño.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>
+                Desarrollo de Aplicaciones
+                <i class="bi bi-gear-wide-connected"></i>
+              </h4>
+              <p>
+                Desarrollamos aplicaciones innovadoras que cumplen con tus
+                necesidades y mejoran la interacción con tus clientes.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-sistema.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>Análisis de Datos <i class="bi bi-database-check"></i></h4>
+              <p>
+                Utilizamos herramientas avanzadas para analizar el
+                comportamiento de tus usuarios en línea, lo que nos permite
+                tomar decisiones estratégicas informadas para mejorar tu
+                presencia digital.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-analisis.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>
+                Optimización de Experiencia <i class="bi bi-graph-up-arrow"></i>
+              </h4>
+              <p>
+                Mejoramos la usabilidad y la experiencia general de tus
+                plataformas digitales para que tus usuarios estén satisfechos.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-experiencia.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 service">
+            <div class="p-3 text-center">
+              <h4>Marketing Digital <i class="bi bi-award"></i></h4>
+              <p>
+                Aumentamos tu visibilidad en línea a través de estrategias de
+                marketing digital efectivas, generando un mayor tráfico y
+                alcanzando a tu audiencia objetivo.
+              </p>
+              <img
+                class="service-image"
+                src="../../assets/img/servicios-publicidad.webp"
+                alt="Desarrollo Web"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Acerca de Nosotros</h3>
+            <p>
+              Somos una agencia creativa dedicada a ofrecer soluciones digitales
+              innovadoras para tu negocio.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> A Coruña, Galicia</p>
+            <p><i class="fas fa-phone"></i> +34 633 381 865</p>
+            <p><i class="fas fa-envelope"></i> mariagustina.rod@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Enlaces Útiles</h3>
+            <ul class="list-unstyled">
+              <li><a href="../../index.html">Inicio</a></li>
+              <li><a href="login.html">Contacto</a></li>
+              <li><a href="../servicios/privacidad.html">Política de Privacidad</a></li>
+              <li><a href="../servicios/terminos.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Síguenos</h3>
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 Todos los derechos reservados Agustina Rodiño</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
