@@ -35,3 +35,20 @@
     cardContainer.classList.add("d-none");
   }
 
+function showCard(target) {
+  const cardContainers = document.querySelectorAll(".card-container");
+  cardContainers.forEach((container) => {
+    if (container.id === target) {
+      container.classList.remove("d-none");
+      document.body.classList.add("card-open"); // Agrega la clase al cuerpo
+    } else {
+      container.classList.add("d-none");
+    }
+  });
+}
+
+function closeCard(button) {
+  const cardContainer = button.closest(".card-container");
+  cardContainer.classList.add("d-none");
+  document.body.classList.remove("card-open"); // Remueve la clase del cuerpo
+}
